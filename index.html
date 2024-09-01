@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bc1cc562be.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #icone {
+            color: #1A3451;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+
+        header ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header li {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        header a {
+            text-decoration: none;
+            color: rgb(73, 73, 73);
+        }
+
+        .secao1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1A3451;
+        }
+
+        .texto1 {
+            width: 40%;
+            color: white;
+        }
+
+        .imagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+
+        .imagem img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .servicos {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            gap: 40px;
+            list-style-type: none;
+        }
+
+        .planejamento,
+        .gestao,
+        .tributo {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            width: 20%;
+            text-align: left;
+
+        }
+
+        .planejamento ul,
+        .gestao ul,
+        .tributo ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        .planejamento li,
+        .gestao li,
+        .tributo li {
+            margin-bottom: 10px;
+        }
+
+        .planejamento h2,
+        .gestao h2,
+        .tributo h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .servicos>div {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 20%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        .container {
+            margin-left: 30px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 300px;
+            width: 100%;
+
+        }
+
+        .container h1 {
+
+            text-align: center;
+            color: #1f1e1e;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .contato {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .campo {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #1f1f1f;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e7e4e4;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0b42a7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id="icone" href="#"><i class="fa-solid fa-money-bill-trend-up fa-3x"></i></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Funcionários</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="secao1">
+            <div class="texto1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magnam nihil dolores, ea quibusdam a
+                    vel laudantium quidem magni quaerat autem, reiciendis eum quod facilis, quae unde minus illum fuga!
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="consultoria2.webp" alt="" width="600px" height="440px">
+            </div>
+        </section>
+        <section>
+            <h1>Nossos Serviços</h1>
+            <div class="servicos">
+                <div class="planejamento">
+                    <h2>
+                        Planejamento
+                    </h2>
+                    <ul>
+                        <li>Plano Financeiro</li>
+                        <li>Gerenciamento de Orçamento</li>
+                        <li>Planejamento de Aposentadoria</li>
+                    </ul>
+                </div>
+                <div class="gestao">
+                    <h2>
+                        Gestão de investimentos
+                    </h2>
+                    <ul>
+                        <li>Recomendações de Investimentos</li>
+                        <li>Gerenciamento de Portifólio</li>
+                        <li>Otimização de retornos</li>
+                        <li>Minimização de riscos</li>
+                    </ul>
+                </div>
+                <div class="tributo">
+                    <h2>
+                        Planejamento Tributário
+                    </h2>
+                    <ul>
+                        <li>Redução de carga Tributária</li>
+                        <li>Venda de ativos</li>
+                        <li>Recebimento de herança</li>
+                        <li>Situações fiscais específicas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contato">
+            <section class="container">
+                <h1>Contato</h1>
+                <form action="" method="post"></form>
+                <div class="campo">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" placeholder="Seu nome">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="Seu e-mail">
+                </div>
+
+                <div class="campo">
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" rows="5" placeholder="Sua mensagem"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </section>
+        </section>
+
+    </main>
+</body>
+
+</html>
